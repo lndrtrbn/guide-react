@@ -96,7 +96,8 @@ const sum = (a, b) => {
   return a + b;
 };
 
-// En plus, si la fonction fait une seule instruction, on peut la mettre sur une seule ligne et ommetre le mot clé "return".
+// En plus, si la fonction fait une seule instruction, on peut
+// la mettre sur une seule ligne et ommetre le mot clé "return".
 const sum = (a, b) => a + b;
 ```
 
