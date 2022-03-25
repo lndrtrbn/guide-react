@@ -327,8 +327,8 @@ export interface Task {
 export default function TodoList() {
   // Notre liste de tâches. On reparlera de useState un peu plus tard.
   const [tasks, setTasks] = useState([
-    { id: 1, content: "Faire les courses", isPrio: true },
-    { id: 2, content: "Donner des nouvelles à maman", isPrio: false },
+    { id: 1, content: "Faire les courses", isPrio: false },
+    { id: 2, content: "Donner des nouvelles à maman", isPrio: true },
   ]);
 
   // Méthode appelée quand on reçoit un évènement de l'enfant.
