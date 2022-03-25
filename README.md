@@ -1,6 +1,6 @@
 # Monter en compétence sur React
 
-_v1.0_
+_v1.0 - Guide rédigé sur la version 17 de React_
 
 L'objectif du document est d'expliquer aussi succinctement que possible les fondamentaux de [React](https://fr.reactjs.org/) pour être prêt à développer rapidement. Des points de bonnes pratiques seront également abordés.
 
