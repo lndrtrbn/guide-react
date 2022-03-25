@@ -529,7 +529,7 @@ function Counter() {
 
 #### **`useMemo`**
 
-Le hook `useMemo` permet de mémoriser une valeur qui sera recalculer uniquement si une des dépendances passées au hook a changé. Ce hook peut être intéressant dans le cas où le calcul d'une valeur est couteux et on ne veut pas le faire à chaque rendu.
+Le hook `useMemo` permet de mémoriser une valeur qui sera recalculée uniquement si une des dépendances passées au hook a changé. Ce hook peut être intéressant dans le cas où le calcul d'une valeur est couteux et on ne veut pas le faire à chaque rendu.
 
 ```js
 // Imaginons que la somme de a et b est très longue...
@@ -852,11 +852,11 @@ export default function UserName() {
 
 Le hook `useUser` pourra être utlisé par n'importe quel composant qui descend du composant `UserProvider`. De cette manière on s'abstrait de devoir passer les données à travers les _props_ de chaque composant intermédiaire.
 
-Cette solution est intéressante car le surplus de code reste réduit et facile à lire. Attention cependant à ne pas tout mettre dans les contextes React ! Les contextes sont utiles quand la donnée doit transitée à plusieurs endroits différents. Si la donnée reste utilisée de manière locale à quelques composants qui sont parents enfants alors la solution avec les _props_ est selon moi plus adaptée car il y a moins de complexité dans le code et le flux de données est plus facile à suivre et à se représenter.
+Cette solution est intéressante car le surplus de code reste réduit et facile à lire. Attention cependant à ne pas tout mettre dans les contextes React ! Les contextes sont utiles quand la donnée doit transiter à plusieurs endroits différents. Si la donnée reste utilisée de manière locale à quelques composants qui sont parents enfants alors la solution avec les _props_ est selon moi plus adaptée car il y a moins de complexité dans le code et le flux de données est plus facile à suivre et à se représenter.
 
-> Cette réflexion est aussi valable pour des librairies comme Redux ou Jotai. Certes elles enlèvent la problématique du passage par de multiples composants mais ajoute pas mal de code, de complexité et de connaissances nécessaire à la compréhension du fonctionnement de l'application.
+> Cette réflexion est aussi valable pour des librairies comme Redux ou Jotai. Certes elles enlèvent la problématique du passage par de multiples composants mais ajoute pas mal de code, de complexité et de connaissances nécessaires à la compréhension du fonctionnement de l'application.
 >
-> Dans une grand majorité des cas, les deux solutions _props_ et contextes React suffisent sans avoir besoin d'installer une librairie supplémentaire.
+> Dans la majorité des cas, les deux solutions _props_ et contextes React suffisent sans avoir besoin d'installer une librairie supplémentaire.
 
 ## Pour aller plus loin
 
